@@ -211,6 +211,12 @@ endif
 endif
 
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/lineage/overlay/no-rro
+
+# Use the default charger mode images
+PRODUCT_PACKAGES += \
+    charger_res_images \
+    product_charger_res_images
+
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/lineage/overlay/common \
     vendor/lineage/overlay/no-rro
